@@ -1,0 +1,154 @@
+/* FONTS */
+@font-face {
+  font-family: "Lostar";
+  src: url("Lostar.ttf");
+}
+@font-face {
+  font-family:"Coolvetica Rg Cond";
+  src: url("Coolvetica Rg Cond.otf");
+}
+@font-face {
+  font-family:"LatoBK";
+  src: url("Lato-Black.ttf");
+}
+@font-face {
+  font-family:"Lato";
+  src: url("Lato-Bold.ttf");
+}
+
+/* GLOBAL */
+body { 
+  background-color: #051C24;
+  color: white;
+  font-family:"Lato";
+}
+
+p {
+	color: #ffffff;
+    font-size: 150%;
+}
+
+/* BANNIÈRE */
+.banner {
+  border-radius: 20px;
+  width: 97%;
+  background: linear-gradient(135deg, #0c2d44, #3274cb);
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 1px solid #c7d6f5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Lostar";
+}
+
+.banner p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #d0e2ff;
+}
+
+/* TITLES */
+h2 {
+    font-family: "Lostar";
+    color: #ffffff;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* BLOC AVION */
+.bloc_a320 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px 0;
+}
+
+.img_a320v1 {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.txt_a320 {
+    font-size: 40px;
+    max-width: 40%;
+}
+
+/* BOUTONS */
+.btn_a320v1,
+.btn_b777v1,
+.btn_b787v1 {
+    background: linear-gradient(135deg, #0c2d44, #3274cb);
+    color: white;
+    cursor: pointer;
+  	font-family: Verdana;
+	font-style: italic;
+    font-size: 17px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn_a320v1:hover,
+.btn_b777v1:hover,
+.btn_b787v1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* TEXTE DES PAGES INTERNES */
+.intro {
+    text-align: center;
+    font-size: 22px;
+    width: 70%;
+    margin: auto;
+}
+
+.bloc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 60px 0;
+}
+
+.img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.txt {
+    width: 40%;
+    font-size: 26px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .bloc_a320,
+    .bloc {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .img_a320v1,
+    .img {
+        max-width: 80%;
+    }
+    .txt_a320,
+    .txt {
+        max-width: 90%;
+        text-align: center;
+        font-size: 26px;
+    }
+}
